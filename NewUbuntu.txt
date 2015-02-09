@@ -1,0 +1,47 @@
+
+1. Update apt
+
+sudo apt-get update
+
+
+
+2. Set Caps Lock as Control Key
+
+sudo apt-get install gnome-tweak-tool
+
+
+
+Install Ssh server
+sudo apt-get install apt-file 
+sudo apt-file update
+sudo apt-get install openssh
+
+Get ssh keys going
+ssh-keygen -t rsa
+Copy keys
+ssh-copy-id user@hostname.example.com
+
+
+
+Configure wired connection
+sudo apt-get install --reinstall network-manager
+sudo apt-get install --reinstall network-manager-gnome
+Logout and log in
+
+Encrypt Private Directory
+sudo apt-get install ecryptfs-utils  
+ecryptfs-setup-private  
+Logout and log back in 
+
+
+Resize Windows with Right key
+gconftool-2 -s -t bool /apps/metacity/general/resize_with_right_button true
+gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
+
+
+Global Menu Bar at top of window
+SystemSettings -> Appearance -> Behavior -> Show the menus for a window in the window's title bar
+
+
+Allow Expose type Windowing 
+
